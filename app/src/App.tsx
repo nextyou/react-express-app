@@ -1,9 +1,12 @@
-import './App.css'
-import Create from './components/user/create'
-
+import "./App.css";
+import Register from "./components/user/Register";
+import { Users } from "./components/user/Users";
 function App() {
-  
-  return <Create/>
+  return (
+    <>
+      <Register />
+      <Users />
+    </>
+  );
 }
-
-export default App
+export default App;

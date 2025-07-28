@@ -1,12 +1,15 @@
 {
   "compilerOptions": {
-    "rootDir": "src/",
+    "jsx": "react-jsx",
+    "rootDir": ".",
+    "outDir": "./dist",
+    "target": "es6",
     "module": "commonjs",
     "noImplicitAny": true,
     "removeComments": true,
     "preserveConstEnums": true,
     "sourceMap": true
   },
-  "include": ["src/**/*"],
+  "include": ["**/*.ts", "**/*.tsx"],
   "exclude": ["**/*.spec.ts"]
 }

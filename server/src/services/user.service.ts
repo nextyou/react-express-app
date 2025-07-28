@@ -1,11 +1,12 @@
+import { getDatabase } from "../db";
 import { User, IUser } from "../models/user.model";
-
-export const createUser = async (data: Partial<IUser>) => {
-  return await User.create(data);
+const db = getDatabase();
+export const createUser = async (data: IUser) => {
+  return await db.createUser(data);
 };
-
 export const getUsers = async () => {
-  return await User.find();
+  const users = await db.getUsers();
+  return users;
 };
 
 export const getUserById = async (id: string) => {
